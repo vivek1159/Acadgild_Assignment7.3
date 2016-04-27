@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.vivek.assignment73.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="@color/LightBlue"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.vivek.assignment73.MainActivity"
+        tools:showIn="@layout/activity_main">
+
+        <TextView
+            android:id="@+id/Text1"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:text="Name: "
+            android:textColor="@color/Black"/>
+
+        <TextView
+            android:id="@+id/Text2"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:text="Age: "
+            android:layout_below="@+id/Text1"
+            android:textColor="@color/Black"/>
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_toEndOf="@+id/Text1"
+            android:background="@color/LightGrey"
+            android:textColor="@color/Black"/>
+
+        <TextView
+            android:id="@+id/Age"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_toEndOf="@+id/Text2"
+            android:background="@color/LightGrey"
+            android:layout_below="@+id/Name"
+            android:textColor="@color/Black"/>
+
+        <TextView
+            android:id="@+id/Text3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/Age"
+            android:text="Employee Photo"
+            android:background="@color/LightGrey"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="@color/Black"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/image"
+            android:layout_below="@id/Text3"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="Employee Photo"
+            />
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
